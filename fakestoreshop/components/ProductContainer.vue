@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-around items-stretch gap-2 p-5 flex-wrap">
+  <div class="flex justify-start items-stretch gap-2 p-5 flex-wrap">
     <slot />
   </div>
 </template>

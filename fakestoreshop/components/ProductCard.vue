@@ -11,7 +11,7 @@
         </div>
       </NuxtLink>
     </div>
-    <p class="text-center inline-block bg-green-500 rounded-lg px-3 py-1 text-white cursor-pointer" @click="addToCart({ 'title':title, 'id': id, 'quantity':quantity})">
+    <p class="text-center inline-block bg-green-500 rounded-lg px-3 py-1 text-white cursor-pointer" @click="modifyCart({'id': id, 'quantity':quantity}, cartActions.ADD)">
       Ajouter au panier</p>
   </div>
 </template>

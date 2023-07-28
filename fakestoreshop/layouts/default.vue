@@ -1,12 +1,13 @@
 <template>
   <div>
     <Header></Header>
-    <slot />
+    <slot/>
   </div>
 </template>
 
 <script>
 import Header from "../components/Header";
+
 export default {
   name: "DefaultLayout",
   components: {Header}
