@@ -24,7 +24,7 @@ const props = defineProps({
 });
 
 const cartStore = useCart();
-let inputQuantity = ref(0);
+let inputQuantity = ref(props.quantity);
 const finalProductPrice = computed(() => {
   return (props.product.price * props.quantity).toFixed(2);
 })
@@ -33,10 +33,6 @@ function changeQuantity(){
   if (inputQuantity.value === "") inputQuantity.value = 1;
   modifyCart({'id': props.product.id, 'quantity':inputQuantity.value}, cartActions.SETQUANTITY)
 }
-
-onMounted(() => {
-  inputQuantity.value = props.quantity;
-})
 
 </script>
 

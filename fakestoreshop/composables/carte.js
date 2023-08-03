@@ -14,7 +14,7 @@ export function modifyCart(product, action) {
     const cartStore = useCart();
     const cartStoreQuantity = useCartQuantity();
 
-    if (cartStore.value === null && action === action.ADD) {
+    if (cartStore.value === null && action == action.ADD) {
         cartStore.value = [product];
     } else {
         const index = cartStore.value.findIndex(o => o.id === product.id);
